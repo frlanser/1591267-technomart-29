@@ -1,7 +1,9 @@
 :root {
     --white: #FFFFFF;
+    --white_translucent: rgba(255, 255, 255, 0.5);
     --dark: #32425C;
     --red: #EE3643;
+    --red_active: #BA2732;
     --black: #000000;
     --light_grey: #F1F5F7;
     --background_light_beige: #F9F5F0;
@@ -50,8 +52,39 @@
     background-color: var(--dark);
 }
 
-.header_top a {
+.logo {
+    background-color: var(--red);
+}
+
+.logo:active {
+    background-color: var(--red_active);
+}
+
+.search {
+    background-color: var(--dark);
     color: var(--white);
+}
+
+.search:active {
+    background-color: var(--white);
+    color: var(--black);
+    /* Изменение цвета иконки */
+}
+
+.marker,
+.basket {
+    color: var(--white);
+}
+
+.search:hover,
+.marker:hover,
+.basket:hover {
+    /* Изменение цвета иконки */
+}
+
+.marker:active,
+.basket:active {
+    color: var(--white_translucent);
 }
 
 .order {
