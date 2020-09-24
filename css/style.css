@@ -1,11 +1,22 @@
 :root {
     --white: #FFFFFF;
     --white_translucent: rgba(255, 255, 255, 0.5);
+    --white_more_transparent: rgba(255, 255, 255, 0.3);
     --dark: #32425C;
+    --dark_active: #161D29;
+    --dark_blue: #293449;
+    --green: #63A63E;
+    --green_hover: #5FBB2D;
+    --green-click: #518534;
     --red: #EE3643;
+    --dark_red: #CA2C37;
     --red_active: #BA2732;
     --black: #000000;
+    --black_transparent: rgba(0, 0, 0, 0.3);
     --light_grey: #F1F5F7;
+    --grey: #C5C5C5;
+    --grey_transparent: rgba(197, 197, 197, 0.3);
+    --dark_grey_transparent: rgba(169, 169, 169, 0.3);
     --background_light_beige: #F9F5F0;
 
     /* header */
@@ -17,7 +28,7 @@
     --promo_block_liliac: #DC91D8;
     --promo_block_green: #8ED78F;
     --slider_background: rgba(0, 0, 0, 0.25);
-    --catalog_del_price: #A9A9A9;
+    --dark-grey: #A9A9A9;
 
     /* footer */
     --address_white: #F3F7F9;
@@ -85,10 +96,20 @@
 .marker:active,
 .basket:active {
     color: var(--white_translucent);
+    background-color: var(--dark_active);
 }
 
 .order {
     background-color: var(--header_green);
+    color: var(--white);
+}
+
+.order:hover {
+    background-color: var(--green_hover);
+}
+
+.order:active {
+    color: var(--white_translucent);
 }
 
 .header_middle_description {
@@ -103,6 +124,35 @@
     line-height: 21px;
     color: var(--black);
     background-color: var(--white);
+}
+
+.sign_in:hover,
+.sign_up:hover {
+    color: var(--red);
+    /* Меняется цвет иконки */
+}
+
+.sign_in:active,
+.sign_up:active {
+    color: var(--grey);
+}
+
+.name:hover {
+    /* Меняется цвет иконки */
+}
+
+.my_orders:hover,
+.private_office:hover {
+    color: var(--red);
+}
+
+.my_orders:active,
+.private_office:active {
+    color: var(--grey);
+}
+
+.name:active {
+    color: var(--grey);
 }
 
 .tel {
@@ -134,8 +184,28 @@
     border: none;
 }
 
+.button:hover {
+    background-color: var(--dark_red);
+}
+
+.button:active {
+    background-color: var(--red_active);
+}
+
 .main_logo {
     display: none;
+}
+
+.sort_item {
+    color: var(--black_transparent);
+}
+
+.sort_item:hover {
+    color: var(--black);
+}
+
+.sort_item:active {
+    color: var(--red);
 }
 
 .promo_block {
@@ -150,6 +220,18 @@
     color: var(--white);
     font-size: 14px;
     line-height: 18px;  
+}
+
+.promo_block_description {
+    background-color: var(--white_more_transparent);
+}
+
+.promo_block_description:hover {
+    background-color: var(--grey_transparent);
+}
+
+.promo_block_description:active {
+    background-color: var(--dark_grey_transparent);
 }
 
 .promo_block_materials, 
@@ -207,7 +289,7 @@
 }
 
 .catalog_item del {
-    color: var(--catalog_del_price);
+    color: var(--dark-grey);
     font-size: 17px;
     line-height: 18px;
 }
@@ -224,6 +306,19 @@
     font-size: 14px;
     line-height: 18px;
     color: var(--white);
+}
+
+.button_buy {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.button_buy:hover {
+    background-color: var(--green_hover);
+}
+
+.button_buy:active {
+    background-color: var(--green-click);
 }
 
 .services {
@@ -247,7 +342,10 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
-    
+}
+
+.tab_link:hover {
+    background-color: var(--dark_blue);
 }
 
 .tab_delivery {
@@ -284,7 +382,16 @@
 /* footer */
 .footer {
     background-color: var(--dark);
-    text-decoration: none;
+}
+
+.footer_top a:hover ,
+.footer_middle a:hover {
+    text-decoration: underline;
+}
+
+.footer_top a:active,
+.footer_middle a:active {
+    opacity: 0.5;
 }
 
 .footer_address,
@@ -299,11 +406,11 @@
 }
 
 .footer_top a {
-    color: var(--footer_nav);
+    color: var(--light_grey);
 }
 
 .footer_middle a {
-    color: var(--footer_yellow);
+    color: var(--text_yellow);
 }
 
 .footer_bottom {
