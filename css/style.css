@@ -428,3 +428,13 @@
 .made_in {
     color: var(--footer_yellow);
 }
+
+.mail:hover,
+.made_in:hover {
+    text-decoration: underline;
+}
+
+.mail:active,
+.made_in:active {
+    color: var(--red);
+}
