@@ -2,12 +2,12 @@
     --white: #FFFFFF;
     --white_translucent: rgba(255, 255, 255, 0.5);
     --white_more_transparent: rgba(255, 255, 255, 0.3);
-    --dark: #32425C;
-    --dark_active: #161D29;
+    --basic_blue: #32425C;
+    --blue_darker: #161D29;
     --dark_blue: #293449;
     --green: #63A63E;
     --green_hover: #5FBB2D;
-    --green-click: #518534;
+    --green_click: #518534;
     --red: #EE3643;
     --dark_red: #CA2C37;
     --red_active: #BA2732;
@@ -23,12 +23,12 @@
     --header_green: #5FBB2D;
 
     /* main */
-    --promo_block_yellow: #FFBF47;
+    --light_yellow: #FFBF47;
     --promo_block_blue: #3BBCE3;
     --promo_block_liliac: #DC91D8;
     --promo_block_green: #8ED78F;
     --slider_background: rgba(0, 0, 0, 0.25);
-    --dark-grey: #A9A9A9;
+    --dark_grey: #A9A9A9;
 
     /* footer */
     --address_white: #F3F7F9;
@@ -39,7 +39,7 @@
     min-width: 960px;
     font-family: "Cuprum", "Tahoma", sans-serif;
     background-color: var(--white);
-    color: var(--dark);
+    color: var(--basic_blue);
 }
 
 .page a {
@@ -60,7 +60,7 @@
     font-size: 18px;
     line-height: 24px;
     color: var(--white);
-    background-color: var(--dark);
+    background-color: var(--basic_blue);
 }
 
 .logo {
@@ -72,7 +72,7 @@
 }
 
 .search {
-    background-color: var(--dark);
+    background-color: var(--basic_blue);
     color: var(--white);
 }
 
@@ -96,7 +96,7 @@
 .marker:active,
 .basket:active {
     color: var(--white_translucent);
-    background-color: var(--dark_active);
+    background-color: var(--blue_darker);
 }
 
 .order {
@@ -167,7 +167,7 @@
 
 .main_nav {
     list-style-type: none;
-    background-color: var(--dark);
+    background-color: var(--basic_blue);
 }
 
 .main_nav a {
@@ -236,7 +236,7 @@
 
 .promo_block_materials, 
 .promo_block_delivery {
-    background-color: var(--promo_block_yellow);
+    background-color: var(--light_yellow);
 }
 
 .promo_block_tool {
@@ -275,7 +275,7 @@
     background-color: var(--background_light_beige);
     font-size: 30px;
     line-height: 30px;
-    color: var(--dark);
+    color: var(--basic_blue);
 }
 
 .catalog_item {
@@ -350,13 +350,13 @@
 
 .tab_delivery {
     background-color: var(--white);
-    color: var(--dark);
+    color: var(--basic_blue);
     border: none;
 }
 
 .tab_guarantee, 
 .tab_credit {
-    background-color: var(--dark);
+    background-color: var(--basic_blue);
     color: var(--white);
     border: none;
 }
@@ -381,7 +381,7 @@
 
 /* footer */
 .footer {
-    background-color: var(--dark);
+    background-color: var(--basic_blue);
 }
 
 .footer_top a:hover ,
