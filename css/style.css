@@ -227,10 +227,6 @@
     background-color: var(--red_active);
 }
 
-.main_logo {
-    display: none;
-}
-
 .sort_item {
     color: var(--black_transparent);
 }
