@@ -5,6 +5,7 @@
     --basic_blue: #32425C;
     --blue_darker: #161D29;
     --dark_blue: #293449;
+    --charcoal: #1D2739;
     --green: #63A63E;
     --green_hover: #5FBB2D;
     --green_click: #518534;
@@ -172,6 +173,15 @@
 
 .main_nav a {
     color: var(--white);
+}
+
+.main_nav a:hover {
+    background: var(--dark_blue);
+}
+
+.main_nav a:active {
+    background: var(--charcoal);
+    opacity: 50%;
 }
 
 /* main  */
@@ -443,7 +453,7 @@
 
 .mail, 
 .made_in {
-    color: var(--footer_yellow);
+    color: var(--lighter_yellow);
 }
 
 .mail:hover,
