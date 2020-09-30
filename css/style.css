@@ -16,9 +16,11 @@
     --black_transparent: rgba(0, 0, 0, 0.3);
     --light_grey: #F1F5F7;
     --grey: #C5C5C5;
+    --lighter_grey: #E5E5E5;
     --grey_transparent: rgba(197, 197, 197, 0.3);
     --dark_grey_transparent: rgba(169, 169, 169, 0.3);
     --background_light_beige: #F9F5F0;
+    --beige: #F7F3EC;
 
     /* header */
     --kelly: #5FBB2D;
@@ -30,6 +32,7 @@
     --light_green: #8ED78F;
     --slider_background: rgba(0, 0, 0, 0.25);
     --dark_grey: #A9A9A9;
+    --light_grey: #F2F6F8;
 
     /* footer */
     --smoky_white: #F3F7F9;
@@ -146,8 +149,18 @@
     color: var(--grey);
 }
 
+.name {
+    background: var(--white);
+    color: var(--black);
+}
+
 .name:hover {
     /* Меняется цвет иконки */
+}
+
+.my_orders,
+.private_office {
+    color: var(--black);
 }
 
 .my_orders:hover,
@@ -227,17 +240,41 @@
     background-color: var(--red_active);
 }
 
+.way {
+    list-style-type: none;
+}
+
+.way_item {
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.main_heading {
+    background-color: var(--light_grey);
+    color: var(--basic_blue);
+}
+
+.filter_item {
+    background-color: var(--beige);
+    list-style-type: none;
+}
+
 .sort_item {
     color: var(--black_transparent);
+    border: none;
+    border-bottom: 1px dashed var(--red);
+    background-color: var(--beige);
 }
 
 .sort_item:hover {
     color: var(--black);
+    border-bottom: 1px solid var(--red);
 }
 
 .sort_item:active,
 .sort_item:focus {
     color: var(--red);
+    border: none;
 }
 
 .promo_block {
@@ -325,6 +362,15 @@
     color: var(--dark-grey);
     font-size: 17px;
     line-height: 18px;
+}
+
+.catalog_list {
+    list-style-type: none;
+}
+
+.button_in_marker {
+    border: 3px solid var(--green);
+    cursor: pointer;
 }
 
 .price {
@@ -418,6 +464,28 @@
     line-height: 24px;
 }
 
+.pages {
+    list-style-type: none;
+}
+
+.pages_item {
+    color: var(--black);
+    border: 1px solid var(--lighter_grey);
+}
+
+.about_punchers {
+    background-color: var(--light_grey);
+}
+
+.about_punchers_heading {
+    text-transform: uppercase;
+}
+
+.this_page {
+    background-color: var(--red);
+    color: var(--white);
+}
+
 /* footer */
 .footer {
     background-color: var(--basic_blue);
@@ -484,4 +552,8 @@
 .mail:focus,
 .made_in:focus {
     color: var(--red);
+}
+
+.basket_popap_heading {
+    color: var(--black);
 }
