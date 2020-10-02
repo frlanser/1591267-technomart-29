@@ -264,6 +264,7 @@
     border: none;
     border-bottom: 1px dashed var(--red);
     background-color: var(--beige);
+    cursor: pointer;
 }
 
 .sort-item:hover {
@@ -373,6 +374,16 @@
     cursor: pointer;
 }
 
+.button-in-marker:hover {
+    border: 3px solid var(--basic-blue);
+}
+
+.button-in-marker:active,
+.button-in-marker:focus {
+    border: 3px solid var(--basic-blue);
+    opacity: 0.5;
+}
+
 .price {
     background-color: var(--red);
     color: var(--white);
@@ -473,6 +484,15 @@
     border: 1px solid var(--lighter-grey);
 }
 
+.pages-item:hover {
+    border: 1px solid var(--grey);
+}
+
+.pages-item:active,
+.pages-item:focus {
+    border: 1px solid var(--red)
+}
+
 .about-punchers {
     background-color: var(--light-grey);
 }
@@ -481,7 +501,7 @@
     text-transform: uppercase;
 }
 
-.this-page {
+.current-page {
     background-color: var(--red);
     color: var(--white);
 }
