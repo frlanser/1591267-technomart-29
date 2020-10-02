@@ -240,11 +240,11 @@
     background-color: var(--red-active);
 }
 
-.way {
+.breadcrumbs {
     list-style-type: none;
 }
 
-.way-item {
+.breadcrumbs-item {
     text-transform: uppercase;
     color: var(--black);
 }
