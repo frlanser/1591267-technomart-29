@@ -44,6 +44,7 @@
     font-family: "Cuprum", "Tahoma", sans-serif;
     background-color: var(--white);
     color: var(--basic-blue);
+    height: 100%;
 }
 
 .page a {
@@ -60,7 +61,16 @@
     background-color: var(--light-grey);
 }
 
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
 .header-top {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content min-content min-content;
     font-size: 18px;
     line-height: 24px;
     color: var(--white);
@@ -120,6 +130,11 @@
 .order:active,
 .order:focus {
     color: var(--white-translucent);
+}
+
+.header-middle {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 .header-middle-description {
@@ -193,6 +208,8 @@
 .main-nav {
     list-style-type: none;
     background-color: var(--basic-blue);
+    display: grid;
+    grid-template-columns: repeat(7, min-content);
 }
 
 .main-nav a {
@@ -283,6 +300,13 @@
     font-size: 24px;
     line-height: 30px;
     color: var(--white);
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: 
+        "materials tool technics"
+        ". . sale"
+        ". . delivery";
 }
 
 .promo-block a {
@@ -305,25 +329,34 @@
     background-color: var(--dark-grey-transparent);
 }
 
-.promo-block-materials, 
+.promo-block-materials {
+    background-color: var(--light-yellow);
+    grid-area: materials;
+}
+
 .promo-block-delivery {
     background-color: var(--light-yellow);
+    grid-area: delivery;
 }
 
 .promo-block-tool {
     background-color: var(--light-blue);
+    grid-area: tool;
 }
 
 .promo-block-technics {
     background-color: var(--light-liliac);
+    grid-area: technics;
 }
 
 .promo-block-sale {
     background-color: var(--light-green);
+    grid-area: sale;
 }
 
 .slider {
     color: var(--white);
+    grid-area: slider;
 }
 
 .slider-description {
@@ -576,4 +609,12 @@
 
 .basket-popup-heading {
     color: var(--black);
+}
+
+.write-us-popup {
+    display: none;
+}
+
+.map-popup {
+    display: none;
 }
