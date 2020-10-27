@@ -178,6 +178,9 @@
     grid-column: 1/2;
     grid-row: 1/3;
     margin: 0;
+    margin-right: 70px;
+    width: 197px;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .header-button {
@@ -438,6 +441,7 @@
     list-style-type: none;
     gap: 20px;
     padding-left: 0;
+    margin-top: 5px;
 }
 
 .promo {
@@ -607,14 +611,17 @@ aside {
     line-height: 30px;
     text-transform: uppercase;
     font-weight: 300;
+    margin-left: 5px;
 }
 
 .catalog-item {
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-weight: bold;
     border: 1px solid var(--smoke);
-    padding: 6px 18px;
-    padding-bottom: 60px;
+    padding-left: 18px;
+    padding-bottom: 155px;
+    padding-top: 25px;
+    padding-right: 25px;
     text-align: center;
     width: 220px;
     box-sizing: border-box;
@@ -624,14 +631,21 @@ aside {
 .catalog-item h2 {
     font-size: 18px;
     line-height: 20px;
-    margin-top: 8px;
-    margin-bottom: 7px;
+    margin-top: 25px;
+    position: absolute;
+    bottom: 80px;
+    left: 23px;
+    right: 20px;
+    color: var(--black);
 }
 
 .catalog-item del {
     color: var(--dark-grey);
     font-size: 17px;
     line-height: 18px;
+    position: absolute;
+    bottom: 70px;
+    left: 75px;
 }
 
 .button-in-marker {
@@ -655,13 +669,12 @@ aside {
     font-size: 17px;
     line-height: 18px;
     display: block;
-    margin-top: 13px;
-    margin-left: 28px;
     padding: 10px 0;
     width: 122px;
     position: absolute;
     border-radius: 3px;
-    bottom: 10px;
+    left: 43px;
+    bottom: 20px;
 }
 
 .price-triangle {
@@ -841,6 +854,7 @@ aside {
     display: flex;
     gap: 10px;
     padding-left: 0;
+    margin-top: 10px;
 }
 
 .pages-item {
