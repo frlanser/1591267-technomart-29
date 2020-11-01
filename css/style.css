@@ -300,16 +300,17 @@
     background-color: var(--basic-blue);
     display: flex;
     justify-content: space-between;
-    padding: 19px 55px 20px 53px;
     margin-top: 20px;
+    padding: 19px 37px 20px 33px;
 }
 
 .main-nav a {
     color: var(--white);
+    padding: 19px 20px;
 }
 
 .main-nav a:hover {
-    background: var(--dark-blue);
+    background: var(--dark-blue); 
 }
 
 .main-nav a:active,
@@ -360,7 +361,7 @@
     font-size: 13px;
     padding-left: 0;
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 120px 100px;
     margin-bottom: 5px;
 }
 
@@ -373,7 +374,7 @@
 .breadcrumbs-item::after {
     background-image: url("../img/icon-right-small.svg");
     background-repeat: no-repeat;
-    background-position: 50% 0%;
+    background-position: 75% 0%;
     margin: -13px auto 0;
     content: "";
     height: 10px;
