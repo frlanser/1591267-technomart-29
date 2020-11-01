@@ -122,12 +122,17 @@
 
 .marker {
     color: var(--white);
-    margin-left: 25px;
+    margin-left: -12px;
+    padding: 9px;
+    align-self: start;
+    justify-self: center;
 }
 
 .basket {
     color: var(--white);
-    margin-left: 35px;
+    padding: 9px;
+    align-self: start;
+    justify-self: center;
 }
 
 .search:hover,
@@ -296,7 +301,7 @@
     display: flex;
     justify-content: space-between;
     padding: 19px 55px 20px 53px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .main-nav a {
@@ -354,7 +359,8 @@
     margin-top: 25px;
     font-size: 13px;
     padding-left: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
     margin-bottom: 5px;
 }
 
@@ -367,12 +373,12 @@
 .breadcrumbs-item::after {
     background-image: url("../img/icon-right-small.svg");
     background-repeat: no-repeat;
-    background-position: right;
-    margin-top: -10px;
+    background-position: 50% 0%;
+    margin: -13px auto 0;
     content: "";
     height: 10px;
     display: block;
-    margin-left: 50px;
+
 }
 
 .main-heading {
@@ -595,6 +601,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
+    column-gap: 19px;
     margin: 25px 0 70px 0;
     list-style-type: none;
 }
@@ -678,6 +685,7 @@ aside {
     line-height: 20px;
     color: var(--black);
     margin: 0;
+    margin-top: 3px;
 }
 
 .catalog-item del {
@@ -705,7 +713,7 @@ aside {
 .price {
     display: flex;
     justify-self: end;
-    margin-right: 15px;
+    margin-right: 11px;
 }
 
 .price-number {
@@ -715,7 +723,7 @@ aside {
     color: var(--white);
     font-size: 17px;
     line-height: 18px;
-    padding-top: 7px;
+    padding-top: 8px;
     padding-left: 5px;
     box-sizing: border-box;
 }
