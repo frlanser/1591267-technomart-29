@@ -172,7 +172,7 @@
     grid-template-columns: 2fr 2fr 1fr 1fr;
     grid-template-rows: min-content min-content;
     align-items: center;
-    padding: 42px 0 25px 30px;
+    padding: 42px 0 20px 30px;
 }
 
 .header-middle-description {
@@ -306,7 +306,7 @@
 
 .main-nav a {
     color: var(--white);
-    padding: 19px 20px;
+    padding: 19px 20px 20px;
 }
 
 .main-nav a:hover {
@@ -468,7 +468,7 @@
     flex-wrap: wrap;
     list-style-type: none;
     column-gap: 20px;
-    row-gap: 17px;
+    row-gap: 18px;
     padding-left: 0;
     margin-top: 5px;
 }
@@ -935,7 +935,7 @@ aside {
     background-color: var(--light-grey);
     color: var(--black);
     padding: 64px 20px 55px;
-    margin-top: 50px;
+    margin-top: 55px;
     font-size: 13px;
 }
 
@@ -943,6 +943,7 @@ aside {
     text-transform: uppercase;
     margin-top: 0;
     font-size: 30px;
+    font-weight: 400;
 }
 
 .current-page {
@@ -1066,10 +1067,12 @@ aside {
 
 .feedback {
     margin-left: 15px;
+    font-size: 16px;
 }
 
 .developed {
     margin-left: 45px;
+    font-size: 16px;
 }
 
 .mail, 
