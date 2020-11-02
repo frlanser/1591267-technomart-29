@@ -172,7 +172,7 @@
     grid-template-columns: 2fr 2fr 1fr 1fr;
     grid-template-rows: min-content min-content;
     align-items: center;
-    padding: 42px 0 20px 30px;
+    padding: 42px 0 25px 30px;
 }
 
 .header-middle-description {
@@ -301,12 +301,13 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    padding: 19px 37px 20px 33px;
+    padding: 0px 37px 0px 33px;
 }
 
 .main-nav a {
     color: var(--white);
     padding: 19px 20px 20px;
+    display: block;
 }
 
 .main-nav a:hover {
