@@ -175,6 +175,10 @@
     padding: 42px 0 25px 30px;
 }
 
+.inner .header-middle {
+    padding-bottom: 20px;
+}
+
 .header-middle-description {
     color: var(--red);
     font-style: italic;
@@ -358,29 +362,34 @@
 
 .breadcrumbs {
     list-style-type: none;
-    margin-top: 25px;
+    margin-top: 22px;
     font-size: 13px;
     padding-left: 0;
-    display: grid;
-    grid-template-columns: 100px 100px 120px 100px;
-    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-bottom: 20px;
 }
 
 .breadcrumbs-item {
     text-transform: uppercase;
     color: var(--black);
-    margin-right: 80px;
+}
+
+.breadcrumbs li {
+    position: relative;
 }
 
 .breadcrumbs-item::after {
     background-image: url("../img/icon-right-small.svg");
     background-repeat: no-repeat;
-    background-position: 75% 0%;
-    margin: -13px auto 0;
+    background-position: 100% 0%;
     content: "";
     height: 10px;
-    display: block;
-
+    width: 10px;
+    position: absolute;
+    left: 150%;
+    top: 0;
 }
 
 .main-heading {
