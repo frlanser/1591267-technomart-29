@@ -366,30 +366,37 @@
     font-size: 13px;
     padding-left: 0;
     display: flex;
-    justify-content: space-between;
-    width: 350px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
 .breadcrumbs-item {
     text-transform: uppercase;
     color: var(--black);
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", "Tahoma", sans-serif;
 }
 
 .breadcrumbs li {
+    margin-right: 40px;
     position: relative;
 }
 
-.breadcrumbs-item::after {
+.breadcrumbs li::after {
     background-image: url("../img/icon-right-small.svg");
     background-repeat: no-repeat;
-    background-position: 100% 0%;
     content: "";
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 8px;
+    right: -25px;
+    top: 4px;
     position: absolute;
-    left: 150%;
-    top: 0;
+}
+
+.breadcrumbs-item-current::after {
+    display: none;
 }
 
 .main-heading {
