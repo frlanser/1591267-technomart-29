@@ -123,7 +123,8 @@
     background-image: url(../img/icon-search.svg);
     width: 16px;
     height: 16px;
-    left: 12px;
+    left: 16px;
+    top: 3px;
     position: absolute;
     opacity: 0.3;
 }
@@ -150,8 +151,8 @@
     width: 14px;
     height: 16px;
     position: absolute;
-    left: -8px;
-    top: 12px;
+    left: -13px;
+    top: 13px;
     opacity: 0.3;
 }
 
@@ -169,8 +170,8 @@
     width: 15px;
     height: 15px;
     content: "";
-    top: 12px;
-    left: -8px;
+    top: 13px;
+    left: -13px;
     opacity: 0.3;
 }
 
@@ -255,7 +256,8 @@
     width: 20px;
     height: 20px;
     position: absolute;
-    left: 10px;
+    left: 19px;
+    top: 15px;
 }
 
 .sign-up {
@@ -355,8 +357,8 @@
     position: absolute;
     height: 19px;
     width: 19px;
-    left: 40px;
-    top: 10px;
+    left: 35px;
+    top: 12px;
 }
 
 .address {
@@ -873,7 +875,7 @@ aside {
     background-image: url(../img/car.svg);
     background-repeat: no-repeat;
     right: 0;
-    bottom: 0;
+    bottom: -13px;
 }
 
 .services h2 {
@@ -1151,8 +1153,9 @@ aside {
 .social-networks {
     display: flex;
     justify-content: space-between;
-    width: 140px;
-    margin-left: 40px;
+    width: 125px;
+    margin-left: 35px;
+    margin-bottom: 18px;
 }
 
 .social-networks a {
