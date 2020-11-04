@@ -89,6 +89,7 @@
     color: var(--white);
     background-color: var(--basic-blue);
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -113,6 +114,20 @@
     margin-left: 40px;
 }
 
+.search-wrapper {
+    position: relative;
+}
+
+.search-wrapper::before {
+    content: "";
+    background-image: url(../img/icon-search.svg);
+    width: 16px;
+    height: 16px;
+    left: 12px;
+    position: absolute;
+    opacity: 0.3;
+}
+
 .search:active,
 .search:focus {
     background-color: var(--white);
@@ -126,6 +141,18 @@
     padding: 9px;
     align-self: start;
     justify-self: center;
+    position: relative;
+}
+
+.marker::before {
+    content: "";
+    background-image: url(../img/icon-bookmark.svg);
+    width: 14px;
+    height: 16px;
+    position: absolute;
+    left: -8px;
+    top: 12px;
+    opacity: 0.3;
 }
 
 .basket {
@@ -133,6 +160,18 @@
     padding: 9px;
     align-self: start;
     justify-self: center;
+    position: relative;
+}
+
+.basket::before {
+    background-image: url(../img/icon-cart.svg);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    content: "";
+    top: 12px;
+    left: -8px;
+    opacity: 0.3;
 }
 
 .search:hover,
@@ -206,6 +245,17 @@
     margin-right: 10px;
     margin-top: 5px;
     padding: 12px 0px 15px 45px;
+    position: relative;
+}
+
+.sign-in::before {
+    content: "";
+    background-image: url(../img/icon-login.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
 }
 
 .sign-up {
@@ -234,10 +284,19 @@
     padding: 12px;
     font-size: 21px;
     margin-top: 5px;
+    position: relative;
 }
 
 .user-area a {
     color: var(--black);
+}
+
+.account {
+    background-image: url(../img/icon-user.svg);
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 15px;
 }
 
 .name {
@@ -287,6 +346,17 @@
     margin: 1px 50px 0px -13px;
     padding: 5px 0px 5px 70px;
     box-sizing: border-box;
+    position: relative;
+}
+
+.tel::before {
+    content: "";
+    background-image: url(../img/icon-phone.svg);
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    left: 40px;
+    top: 10px;
 }
 
 .address {
@@ -792,6 +862,18 @@ aside {
     column-gap: 80px;
     padding-top: 64px;
     padding-bottom: 100px;
+    position: relative;
+}
+
+.delivery::after {
+    content: "";
+    position: absolute;
+    width: 468px;
+    height: 281px;
+    background-image: url(../img/car.svg);
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 0;
 }
 
 .services h2 {
@@ -1074,7 +1156,6 @@ aside {
 }
 
 .social-networks a {
-    background-color: var(--black);
     color: var(--white);
 }
 
