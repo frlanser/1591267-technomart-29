@@ -175,6 +175,10 @@
     padding: 42px 0 25px 30px;
 }
 
+.inner .header-middle {
+    padding-bottom: 20px;
+}
+
 .header-middle-description {
     color: var(--red);
     font-style: italic;
@@ -301,12 +305,13 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    padding: 19px 37px 20px 33px;
+    padding: 0px 37px 0px 33px;
 }
 
 .main-nav a {
     color: var(--white);
-    padding: 19px 20px;
+    padding: 19px 20px 20px;
+    display: block;
 }
 
 .main-nav a:hover {
@@ -357,29 +362,41 @@
 
 .breadcrumbs {
     list-style-type: none;
-    margin-top: 25px;
+    margin-top: 22px;
     font-size: 13px;
     padding-left: 0;
-    display: grid;
-    grid-template-columns: 100px 100px 120px 100px;
-    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .breadcrumbs-item {
     text-transform: uppercase;
     color: var(--black);
-    margin-right: 80px;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", "Tahoma", sans-serif;
 }
 
-.breadcrumbs-item::after {
+.breadcrumbs li {
+    margin-right: 40px;
+    position: relative;
+}
+
+.breadcrumbs li::after {
     background-image: url("../img/icon-right-small.svg");
     background-repeat: no-repeat;
-    background-position: 75% 0%;
-    margin: -13px auto 0;
     content: "";
-    height: 10px;
-    display: block;
+    height: 12px;
+    width: 8px;
+    right: -25px;
+    top: 4px;
+    position: absolute;
+}
 
+.breadcrumbs-item-current::after {
+    display: none;
 }
 
 .main-heading {
@@ -468,7 +485,7 @@
     flex-wrap: wrap;
     list-style-type: none;
     column-gap: 20px;
-    row-gap: 17px;
+    row-gap: 18px;
     padding-left: 0;
     margin-top: 5px;
 }
@@ -935,7 +952,7 @@ aside {
     background-color: var(--light-grey);
     color: var(--black);
     padding: 64px 20px 55px;
-    margin-top: 50px;
+    margin-top: 55px;
     font-size: 13px;
 }
 
@@ -943,6 +960,7 @@ aside {
     text-transform: uppercase;
     margin-top: 0;
     font-size: 30px;
+    font-weight: 400;
 }
 
 .current-page {
@@ -1066,10 +1084,12 @@ aside {
 
 .feedback {
     margin-left: 15px;
+    font-size: 16px;
 }
 
 .developed {
     margin-left: 45px;
+    font-size: 16px;
 }
 
 .mail, 
