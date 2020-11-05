@@ -1214,6 +1214,13 @@ aside {
     color: var(--red);
 }
 
+.basket-popup {
+    width: 620px;
+    height: 282px;
+    position: absolute;
+    border-top: 7px solid var(--red);
+}
+
 .basket-popup-heading {
     color: var(--black);
 }
