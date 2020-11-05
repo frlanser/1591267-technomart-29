@@ -1238,6 +1238,7 @@ aside {
     font-size: 18px;
     line-height: 24px;
     font-family: "Cuprum", "Tahoma", sans-serif;
+    box-shadow: 0 0 10px var(--grey);
 }
 
 .write-us-input {
