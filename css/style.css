@@ -711,6 +711,10 @@
     list-style-type: none;
 }
 
+.manufacturer-header .button {
+    margin-right: 7px;
+}
+
 .manufacturer .catalog-item {
     border: 1px solid var(--smoke);
     height: 145px;
