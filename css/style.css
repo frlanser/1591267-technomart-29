@@ -660,6 +660,52 @@
     height: 236px;
 }
 
+.slider-arrow-left {
+    position: absolute;
+    background-image: url(../img/icon-left.svg);
+    background-repeat: no-repeat;
+    top: 123px;
+    left: 25px;
+    width: 21px;
+    height: 40px;
+}
+
+.slider-arrow-right {
+    position: absolute;
+    background-image: url(../img/icon-left.svg);
+    background-repeat: no-repeat;
+    top: 122px;
+    right: 22px;
+    width: 21px;
+    height: 40px;
+    transform: rotate(180deg);
+}
+
+.slider-dots {
+    position: absolute;
+    background-image: url(../img/slider-dots-while.svg),
+        url(../img/slider-dots-while.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+    width: 30px;
+    height: 10px;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -15px;
+}
+
+.slider-dots-indicator {
+    background-image: url(../img/slider-indicator.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+
 .slider-description {
     background: var(--slider-background);
     position: absolute;
