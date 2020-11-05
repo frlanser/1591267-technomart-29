@@ -588,6 +588,11 @@
     grid-template-columns: 135px 1fr;
     grid-template-rows: 1fr 1fr;
     padding-left: 23px;
+    position: relative;
+}
+
+.promo-block-item .angle-new {
+    margin-top: 0;
 }
 
 .promo-block-item h2 {
