@@ -365,9 +365,25 @@
         </div>
       </div>
     </footer>
-    <div class="write-us-popup">
-      <!--Здесь будет форма -->
-    </div>
+    <form action="" method="POST" class="write-us-popup">
+      <label class="write-us-name">
+        Ваше имя:
+        <input type="text" class="write-us-name-input write-us-input" name="write-us-name" placeholder="Имя Фамилия">
+      </label>
+      <label class="write-us-mail">
+        Ваш e-mail:
+        <input type="text" class="write-us-mail-input write-us-input" name="write-us-mail" placeholder="email@example.com">
+      </label>
+      <label class="write-us-text">
+        Текст письма:
+        <textarea class="write-us-text-input write-us-input" name="write-us-text" placeholder="В свободной форме"></textarea>
+      </label>
+      <div class="write-us-button-wrapper">
+        <input class="button write-us-button" type="submit" value="Отправить">
+      </div>
+      <div class="write-us-close">
+      </div>
+    </form>
     <div class="map-popup">
       <a href="">
         <img src="img/map-popup.png" alt="map">
