@@ -15,6 +15,7 @@
     --black: #000000;
     --black-transparent: rgba(0, 0, 0, 0.3);
     --light-grey: #F1F5F7;
+    --rain: #F1F1F1;
     --grey: #C5C5C5;
     --lighter-grey: #E5E5E5;
     --grey-transparent: rgba(197, 197, 197, 0.3);
@@ -1282,10 +1283,53 @@ aside {
     height: 282px;
     position: absolute;
     border-top: 7px solid var(--red);
+    background-color: var(--white);
+    left: 50%;
+    margin-left: -320px;
+    top: 50%;
+    margin-top: -141px;
+    display: grid;
+    grid-template-rows: 1fr 112px;
+    box-sizing: border-box;
 }
 
 .basket-popup-heading {
     color: var(--black);
+    justify-self: center;
+    align-self: center;
+    position: relative;
+}
+
+.basket-popup-heading::before {
+    background-image: url(../img/icon-mark.svg);
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    top: -20px;
+    left: -80px;
+}
+
+.basket-popup-button {
+    padding: 10px 40px;
+    
+}
+
+.basket-popup-wrapper {
+    background-color: var(--rain);
+    align-self: flex-end;
+    width: 620px;
+    height: 112px;
+    padding-top: 50px;
+    padding-left: 114px;
+    box-sizing: border-box;
+}
+
+.continue-shopping {
+    padding: 10px 20px;
+    background-color: var(--white);
+    color: var(--black);
+    margin-left: 20px;
 }
 
 .write-us-popup {
