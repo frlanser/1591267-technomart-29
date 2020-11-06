@@ -104,6 +104,16 @@
     box-sizing: border-box;
 }
 
+.logo::after {
+    width: 220px;
+    height: 5px;
+    background-color: var(--red-active);
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
 .logo:active,
 .logo:focus {
     background-color: var(--red-active);
@@ -114,6 +124,14 @@
     color: var(--white);
     border: none;
     margin-left: 40px;
+}
+
+::-webkit-input-placeholder {
+    color: var(--white);
+}
+
+::-moz-placeholder {
+    color: var(--white);
 }
 
 .search-wrapper {
@@ -140,8 +158,10 @@
 
 .marker {
     color: var(--white);
-    margin-left: -12px;
+    margin-left: -45px;
     padding: 9px;
+    padding-left: 40px;
+    padding-right: 15px;
     align-self: start;
     justify-self: center;
     position: relative;
@@ -153,7 +173,7 @@
     width: 14px;
     height: 16px;
     position: absolute;
-    left: -13px;
+    left: 18px;
     top: 13px;
     opacity: 0.3;
 }
@@ -161,10 +181,15 @@
 .basket {
     color: var(--white);
     padding: 9px;
+    padding-left: 35px;
+    width: 136px;
+    padding-right: 12px;
+    margin-left: 0px;
+    margin-right: 5px;
     align-self: start;
     justify-self: center;
     position: relative;
-    margin-left: 1px;
+    box-sizing: border-box;
 }
 
 .basket::before {
@@ -174,15 +199,18 @@
     height: 15px;
     content: "";
     top: 13px;
-    left: -13px;
+    left: 15px;
     opacity: 0.3;
 }
 
-.search:hover,
-.marker:hover,
-.basket:hover {
+.basket-with-goods {
+    background-color: var(--red);
+}
 
-    /* Изменение цвета иконки */
+.search-wrapper:hover::before,
+.marker:hover::before,
+.basket:hover::before {
+    opacity: 1;
 }
 
 .marker:active,
@@ -550,13 +578,13 @@
     text-transform: uppercase;
     font-size: 13px;
     margin: 0 20px 0 25px;
-    
 }
 
 .sort-item-up,
 .sort-item-down {
     justify-self: flex-end;
     margin: 0 5px;
+    width: 30px;
 }
 
 .sort-item:hover {
@@ -699,6 +727,17 @@
     grid-area: slider;
     position: relative;
     height: 236px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-item {
+    position: absolute;
+    padding: 0;
+}
+
+.slide-2 {
+    visibility: hidden;
 }
 
 .slider-arrow-left {
@@ -730,7 +769,7 @@
     background-position: left, right;
     width: 30px;
     height: 10px;
-    bottom: 5px;
+    bottom: 43px;
     left: 50%;
     margin-left: -15px;
 }
@@ -775,7 +814,7 @@
 
 .slider-button {
     position: absolute;
-    bottom: 0px;
+    bottom: 35px;
     left: 24px;
     padding: 11px 46px 9px;
 }
