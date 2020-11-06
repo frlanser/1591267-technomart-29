@@ -181,12 +181,15 @@
 .basket {
     color: var(--white);
     padding: 9px;
-    padding-left: 40px;
-    padding-right: 15px;
-    margin-left: -20px;
+    padding-left: 35px;
+    width: 136px;
+    padding-right: 12px;
+    margin-left: 0px;
+    margin-right: 5px;
     align-self: start;
     justify-self: center;
     position: relative;
+    box-sizing: border-box;
 }
 
 .basket::before {
@@ -198,6 +201,10 @@
     top: 13px;
     left: 15px;
     opacity: 0.3;
+}
+
+.basket-with-goods {
+    background-color: var(--red);
 }
 
 .search-wrapper:hover::before,
