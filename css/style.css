@@ -104,6 +104,16 @@
     box-sizing: border-box;
 }
 
+.logo::after {
+    width: 220px;
+    height: 5px;
+    background-color: var(--red-active);
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
 .logo:active,
 .logo:focus {
     background-color: var(--red-active);
@@ -114,6 +124,14 @@
     color: var(--white);
     border: none;
     margin-left: 40px;
+}
+
+::-webkit-input-placeholder {
+    color: var(--white);
+}
+
+::-moz-placeholder {
+    color: var(--white);
 }
 
 .search-wrapper {
@@ -140,8 +158,10 @@
 
 .marker {
     color: var(--white);
-    margin-left: -12px;
+    margin-left: -45px;
     padding: 9px;
+    padding-left: 40px;
+    padding-right: 15px;
     align-self: start;
     justify-self: center;
     position: relative;
@@ -153,7 +173,7 @@
     width: 14px;
     height: 16px;
     position: absolute;
-    left: -13px;
+    left: 18px;
     top: 13px;
     opacity: 0.3;
 }
@@ -161,10 +181,12 @@
 .basket {
     color: var(--white);
     padding: 9px;
+    padding-left: 40px;
+    padding-right: 15px;
+    margin-left: -20px;
     align-self: start;
     justify-self: center;
     position: relative;
-    margin-left: 1px;
 }
 
 .basket::before {
@@ -174,15 +196,14 @@
     height: 15px;
     content: "";
     top: 13px;
-    left: -13px;
+    left: 15px;
     opacity: 0.3;
 }
 
-.search:hover,
-.marker:hover,
-.basket:hover {
-
-    /* Изменение цвета иконки */
+.search-wrapper:hover::before,
+.marker:hover::before,
+.basket:hover::before {
+    opacity: 1;
 }
 
 .marker:active,
@@ -550,13 +571,13 @@
     text-transform: uppercase;
     font-size: 13px;
     margin: 0 20px 0 25px;
-    
 }
 
 .sort-item-up,
 .sort-item-down {
     justify-self: flex-end;
     margin: 0 5px;
+    width: 30px;
 }
 
 .sort-item:hover {
