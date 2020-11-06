@@ -164,6 +164,7 @@
     align-self: start;
     justify-self: center;
     position: relative;
+    margin-left: 1px;
 }
 
 .basket::before {
@@ -287,7 +288,7 @@
     grid-row: 1/2;
     padding: 12px;
     font-size: 21px;
-    margin-top: 5px;
+    margin-top: 2px;
     position: relative;
 }
 
@@ -301,6 +302,7 @@
     height: 18px;
     position: absolute;
     top: 15px;
+    left: 18px
 }
 
 .out {
@@ -310,11 +312,11 @@
     height: 18px;
     position: absolute;
     top: 15px;
-    right: 40px;
+    right: 20px;
 }
 
 .name {
-    margin-left: 28px;
+    margin-left: 48px;
 }
 
 .name:hover {
@@ -324,13 +326,28 @@
 .my-orders {
     color: var(--black);
     margin-top: 5px;
-    margin-left: 50px;
+    margin-left: 47px;
+    grid-column: 3/4;
+    grid-row: 2/3;
 }
 
 .private-office {
     color: var(--black);
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 2px;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background-color: var(--basic-blue);
+    margin-left: calc(50% - 17px);
+    margin-top: 5px;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    border-radius: 50%;
 }
 
 .my-orders:hover,
@@ -500,9 +517,9 @@
     display: flex;
     background-color: var(--beige);
     border-radius: 3px;
-    justify-content: space-between;
     padding-right: 10px;
     font-family: "PT Sans", "Tahoma", sans-serif;
+    margin-right: -7px;
 }
 
 .sort-header {
@@ -517,8 +534,10 @@
 .sort-list {
     list-style-type: none;
     display: flex;
+    justify-content: flex-start;
     margin-top: 11px;
     align-items: center;
+    padding-left: 0;
 }
 
 .sort-item {
@@ -529,6 +548,11 @@
     cursor: pointer;
     text-transform: uppercase;
     font-size: 13px;
+}
+
+.sort-item-up,
+.sort-item-down {
+    justify-self: flex-end;
 }
 
 .sort-item:hover {
