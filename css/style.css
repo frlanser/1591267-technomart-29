@@ -303,6 +303,16 @@
     top: 15px;
 }
 
+.out {
+    background-image: url(../img/icon-logout.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+}
+
 .name {
     margin-left: 28px;
 }
@@ -490,6 +500,8 @@
     display: flex;
     background-color: var(--beige);
     border-radius: 3px;
+    justify-content: space-between;
+    padding-right: 10px;
     font-family: "PT Sans", "Tahoma", sans-serif;
 }
 
@@ -843,9 +855,40 @@ aside {
     margin-bottom: 15px;
 }
 
+.catalog-item:hover {
+    box-shadow: 0 0 10px var(--grey);
+}
+
+.catalog-item:hover .button-buy{
+    visibility: visible;
+}
+
+.catalog-item:hover .button-in-marker{
+    visibility: visible;
+}
+
+
+.catalog-item:hover img{
+    visibility: hidden;
+}
+
 .button-in-marker {
     border: 3px solid var(--green);
     cursor: pointer;
+    width: 135px;
+    height: 38px;
+    position: absolute;
+    left: 50%;
+    margin-left: -67px;
+    top: 86px;
+    padding: 7px 25px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: var(--white);
+    color: var(--basic-blue);
+    font-family: "Cuprum", "Tahoma", sans-serif;
+    text-transform: uppercase;
+    visibility: hidden;
 }
 
 .button-in-marker:hover {
@@ -917,6 +960,19 @@ aside {
 .button-buy {
     background-color: var(--green);
     color: var(--white);
+    width: 135px;
+    height: 38px;
+    position: absolute;
+    left: 50%;
+    margin-left: -67px;
+    top: 35px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    visibility: hidden;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .button-buy:hover {
@@ -1402,7 +1458,7 @@ aside {
     
 }
 
-.write-us-close {
+.popup-close {
     background-image: url(../img/icon-close.svg);
     position: absolute;
     top: 14px;
