@@ -900,6 +900,14 @@ aside {
     position: relative;
 }
 
+.manufacturer-catalog-item img{
+    justify-self: center;
+    align-self: center;
+    margin-top: -5px;
+    margin-left: -5px;
+    border: 1px solid var(--smoke);
+}
+
 .catalog-item img {
     justify-self: center;
     align-self: center;
