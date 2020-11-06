@@ -727,6 +727,17 @@
     grid-area: slider;
     position: relative;
     height: 236px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-item {
+    position: absolute;
+    padding: 0;
+}
+
+.slide-2 {
+    visibility: hidden;
 }
 
 .slider-arrow-left {
@@ -758,7 +769,7 @@
     background-position: left, right;
     width: 30px;
     height: 10px;
-    bottom: 5px;
+    bottom: 43px;
     left: 50%;
     margin-left: -15px;
 }
@@ -803,7 +814,7 @@
 
 .slider-button {
     position: absolute;
-    bottom: 0px;
+    bottom: 35px;
     left: 24px;
     padding: 11px 46px 9px;
 }
