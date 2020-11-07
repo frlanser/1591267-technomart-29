@@ -564,9 +564,10 @@
     list-style-type: none;
     display: flex;
     margin-top: 11px;
+    margin-left: 100px;
+    justify-content: flex-end;
     align-items: center;
     padding-left: 0;
-    width: 500px;
 }
 
 .sort-item {
@@ -577,13 +578,19 @@
     cursor: pointer;
     text-transform: uppercase;
     font-size: 13px;
-    margin: 0 20px 0 25px;
+    margin: 0 25px 0 30px;
+    line-height: 18px;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+}
+
+.sort-item-selected {
+    color: var(--red);
 }
 
 .sort-item-up,
 .sort-item-down {
     justify-self: flex-end;
-    margin: 0 5px;
+    margin: 0 2px;
     width: 30px;
 }
 
@@ -596,6 +603,13 @@
 .sort-item:focus {
     color: var(--red);
     border: none;
+}
+
+.sort-list-up-down {
+    list-style: none;
+    display: flex;
+    margin-top: 5px;
+    padding-left: 0;
 }
 
 .filter {
