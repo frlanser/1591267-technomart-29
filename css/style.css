@@ -1397,6 +1397,12 @@ aside {
     color: var(--white);
 }
 
+.social-networks-item:hover  path:first-child,
+.social-networks-item:active  path:first-child,
+.social-networks-item:focus  path:first-child{
+    fill: var(--red);
+}
+
 .social-networks li{
     list-style: none;
 }
